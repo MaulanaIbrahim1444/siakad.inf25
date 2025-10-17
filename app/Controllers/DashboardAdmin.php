@@ -6,6 +6,11 @@ class DashboardAdmin extends BaseController
 {
     public function index()
     {
-        return view('v_template_admin');
+        $data = [
+            'judul' => 'Dashboard Admin',
+            'subjudul' => '',
+            'page' => ('v_dashboard_admin')
+        ];
+        return view('v_template_admin', $data);
     }
 }
