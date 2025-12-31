@@ -1,0 +1,221 @@
+ERROR - 2025-12-30 21:58:21 --> mysqli_sql_exception: Table 'db-siakad-si4.tbl_sekolah' doesn't exist in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-30 21:58:21 --> Table 'db-siakad-si4.tbl_sekolah' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-30 21:59:41 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db-siakad-si4' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db-siakad-si4', 3306, '', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db-siakad-si4' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#5 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-12-30 21:59:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db-siakad-si4'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 3 APPPATH\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-30 22:00:19 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db-siakad-si4' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db-siakad-si4', 3306, '', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db-siakad-si4' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#5 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-12-30 22:00:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db-siakad-si4'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 3 APPPATH\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-30 22:00:29 --> mysqli_sql_exception: Table 'db-siakad-ci4.tbl_sekolah' doesn't exist in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-30 22:00:29 --> Table 'db-siakad-ci4.tbl_sekolah' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_sekolah`
+WHERE `id_sekolah` = :id_sekolah:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-12-30 22:01:05 --> mysqli_sql_exception: Unknown column 'id_kampus' in 'where clause' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Auth->index()
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-12-30 22:01:05 --> Unknown column 'id_kampus' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_kampus`
+WHERE `id_kampus` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kampus`
+WHERE `id_kampus` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kampus`
+WHERE `id_kampus` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kampus`
+WHERE `id_kampus` = :id_kampus:', [...], false)
+ 5 APPPATH\Models\ModelSekolah.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(22): App\Models\ModelSekolah->DetailData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-30 22:18:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_login.php on line 23.
+ 1 APPPATH\Views\v_login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_login.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\Auth.php(25): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-30 22:18:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_login.php on line 23.
+ 1 APPPATH\Views\v_login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_login.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\Auth.php(25): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-30 22:18:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_login.php on line 23.
+ 1 APPPATH\Views\v_login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_login.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\Auth.php(25): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-12-30 22:18:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_login.php on line 23.
+ 1 APPPATH\Views\v_login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_login.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\Auth.php(25): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Auth->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
