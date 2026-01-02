@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1767192700;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:9:"ussername";s:5:"admin";s:5:"level";s:0:"";s:8:"password";s:4:"user";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"new";s:21:"_ci_validation_errors";s:3:"new";}_ci_validation_errors|s:105:"a:2:{s:8:"username";s:27:"Username Tidak Boleh Kosong";s:5:"level";s:29:"Level User Tidak Boleh Kosong";}";

@@ -6,14 +6,17 @@ use CodeIgniter\Model;
 
 class ModelSekolah extends Model
 {
-    protected $table = 'tbl_sekolah';
-    protected $primaryKey = 'id_sekolah';
+    protected $table = 'tbl_kampus';   // nama tabel
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['nama', 'alamat']; // sesuaikan kolom
+
+    public function getData()
+    {
+        return $this->findAll();
+    }
 
     public function DetailData()
     {
-        return $this->db->table('tbl_kampus')
-            ->where('id', 1)
-            ->get()
-            ->getRowArray();
+    return $this->first();
     }
 }

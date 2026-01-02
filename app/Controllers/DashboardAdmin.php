@@ -12,5 +12,7 @@ class DashboardAdmin extends BaseController
             'page' => ('v_dashboard_admin')
         ];
         return view('v_template_admin', $data);
+        dd(session()->get());
+
     }
 }

@@ -19,6 +19,7 @@
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
+
     <div class="card-header text-center">
         <img src="<?= base_url('assets/' . $web['logo_kampus']) ?>" 
          width="300" 
@@ -29,39 +30,43 @@
         </a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Silahkan Login</p>
+      <?php
+      session();
+      $validasi = \Config\Services::validation();
+    if (session()->get('pesan')) { 
+      echo '<div class= "alert alert-danger">';
+      echo session()->get('pesan');
+      echo '</div>';
+      } ?>
 
-      <?php echo form_open('auth/Ceklogin'); ?>
-        <div class="input-group mb-3">
-          <input name="ussername" class="form-control" placeholder="USSERNAME/NIM/NIP">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
+      <?php echo form_open('Auth/Ceklogin'); ?>
+        <div class="form-group">
+          <Label for="username">Username</Label>
+          <input name="username" class="form-control" placeholder="USERNAME/NIM/NIP">
+          <p class ="text-danger"> <?= $validasi->getError('username'); ?> </p>
         </div>
-        <div class="input-group mb-3">
-        <select name="level" class="form-control">
-            <option value="">-- Pilih Level --</option>
-            <option value="Admin">Admin</option>
-            <option value="Dosen">Dosen</option>
-            <option value="Mahasiswa">Mahasiswa</option>
-        </select>
+        
+        <div class="form-group">
+          <Label for="username">Level</Label>
+          <select name="level" class="form-control" required>
+               <option value="">-- Pilih Level --</option>
+               <option value="1">Admin</option>
+                <option value="2">Dosen</option>
+                <option value="3">Mahasiswa</option>
+            </select>
+
+         <p class ="text-danger"> <?= $validasi->getError('level'); ?> </p>
         <div class="input-group-append">
-            <div class="input-group-text">
-            <span class="fas fa-user"></span>
-            </div>
-        </div>
-        </div>
+           
+      </div>
 
-        <div class="input-group mb-3">
+  
+        <div class="form-group">
+          <Label for="username">Password</Label>
         <input name="password" type="password" class="form-control" placeholder="Password">
-        <div class="input-group-append">
-            <div class="input-group-text">
-            <span class="fas fa-lock"></span>
-            </div>
+        <p class ="text-danger"> <?= $validasi->getError('password'); ?> </p>
         </div>
-        </div>
+      
 
         <div class="row">
           <div class="col-8">
@@ -78,7 +83,7 @@
           </div>
           <!-- /.col -->
         </div>
-      <?php echo form_close('auth/login'); ?>
+      <?php echo form_close('Auth/login'); ?>
 
       
     <!-- /.card-body -->
