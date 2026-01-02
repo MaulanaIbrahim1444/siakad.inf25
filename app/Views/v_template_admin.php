@@ -128,12 +128,11 @@ $submenu = $submenu ?? '';
                 </a>
               </li> 
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                 <a href="<?= base_url('feedback') ?>" class="nav-link">
+                 <i class="fas fa-comment"></i>
+                  <p>Umpan Balik</p>
                 </a>
               </li>
-
             </ul>
           </li>
           <li class="nav-item">

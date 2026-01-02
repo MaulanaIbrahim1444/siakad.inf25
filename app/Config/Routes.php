@@ -26,6 +26,9 @@ $routes->get('dashboardadmin', 'DashboardAdmin::index', ['filter' => 'FilterAdmi
 $routes->get('jurusan', 'Jurusan::index');
 $routes->post('jurusan/proses', 'Jurusan::proses');
 $routes->post('jurusan/proses-matching', 'Jurusan::prosesMatching');
+$routes->get('feedback', 'Feedback::index');
+$routes->post('feedback/simpan', 'Feedback::simpan');
+
 
 
 

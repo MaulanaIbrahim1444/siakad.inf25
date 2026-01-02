@@ -294,3 +294,14 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
  9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
 10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-02 17:42:47 --> Undefined variable $subjudul
+in APPPATH\Views\v_template_admin.php on line 166.
+ 1 APPPATH\Views\v_template_admin.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subjudul', 'APPPATH\\Views\\v_template_admin.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 5 APPPATH\Controllers\feedback.php(17): view('v_template_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Feedback->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Feedback))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
