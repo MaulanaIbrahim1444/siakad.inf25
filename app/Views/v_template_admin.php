@@ -18,6 +18,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
+  <?php
+$menu    = $menu ?? '';
+$submenu = $submenu ?? '';
+?>
 <div class="wrapper">
 
   <!-- Navbar -->
@@ -100,8 +104,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
           </li>
 
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item <?= $menu == 'master-data' ? 'menu-open' : '' ?>">
+            <a href="#" class="nav-link <?= $menu == 'master-data' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Master Data
@@ -110,9 +114,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="<?= base_url('Jurusan') ?>" class="nav-link  <?= $submenu == 'jurusan' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>Jurusan</p>
                 </a>
               </li>
               <li class="nav-item">

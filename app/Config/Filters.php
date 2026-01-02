@@ -48,6 +48,7 @@ class Filters extends BaseConfig
                     'Auth','Auth/*',
                     'Home','Home/*',
                     'DashboardAdmin','DashboardAdmin/*',
+                    'Jurusan','Jurusan/*',
                 ]
             ],
         ],

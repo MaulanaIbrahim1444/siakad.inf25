@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in (v2)</title>
+  <title>SIAKAD | <?= $judul ?></title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -21,9 +21,9 @@
   <div class="card card-outline card-primary">
 
     <div class="card-header text-center">
-        <img src="<?= base_url('assets/' . $web['logo_kampus']) ?>" 
+        <img src="<?= base_url('assets/' . $web['logo_header']) ?>" 
          width="300" 
-         alt="Logo Kampus">
+         alt="Logo Header">
 
         <a href="<?= base_url('auth') ?>" class="siakad-title">
         <b><br>SIMBARU</b> PERADABAN
@@ -60,26 +60,19 @@
            
       </div>
 
-  
         <div class="form-group">
           <Label for="username">Password</Label>
         <input name="password" type="password" class="form-control" placeholder="Password">
         <p class ="text-danger"> <?= $validasi->getError('password'); ?> </p>
         </div>
       
-
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
+          <div class="col-6">
+            <a href="<?= base_url() ?>" class="btn btn-success btn-block btn-flat"><i class="fa-solid fa-globe"></i>Website</a>
           </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-block btn-flat"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</button>
           </div>
           <!-- /.col -->
         </div>
