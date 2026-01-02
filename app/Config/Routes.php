@@ -23,6 +23,11 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 $routes->get('dashboardadmin', 'DashboardAdmin::index', ['filter' => 'FilterAdmin']);
+$routes->get('jurusan', 'Jurusan::index');
+$routes->post('jurusan/proses', 'Jurusan::proses');
+$routes->post('jurusan/proses-matching', 'Jurusan::prosesMatching');
+
+
 
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.

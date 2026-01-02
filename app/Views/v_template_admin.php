@@ -42,6 +42,8 @@ $submenu = $submenu ?? '';
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
 
+    
+
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item">
         <a class="nav-link" data-widget="fullscreen" href="#" role="button">
@@ -120,11 +122,18 @@ $submenu = $submenu ?? '';
                 </a>
               </li>
               <li class="nav-item">
+                 <a href="<?= base_url('Jurusan/matching') ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <span>Matching Jurusan</span>
+                </a>
+              </li> 
+              <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inactive Page</p>
                 </a>
               </li>
+
             </ul>
           </li>
           <li class="nav-item">

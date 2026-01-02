@@ -242,3 +242,55 @@ in APPPATH\Controllers\Jurusan.php on line 4.
 CRITICAL - 2026-01-02 17:01:44 --> Cannot use App\Controllers\BaseController as BaseController because the name is already in use
 in APPPATH\Controllers\Jurusan.php on line 7.
  1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-01-02 17:28:08 --> Invalid file: jurusan/v_kuesioner.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jurusan/v_kuesioner.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_kuesioner', [], true)
+ 3 APPPATH\Views\v_template_admin.php(180): view('jurusan/v_kuesioner')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(46): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->matching()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-02 17:28:39 --> Invalid file: jurusan/v_kuesioner.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jurusan/v_kuesioner.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_kuesioner', [], true)
+ 3 APPPATH\Views\v_template_admin.php(181): view('jurusan/v_kuesioner')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(46): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->matching()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-02 17:29:58 --> Invalid file: jurusan/v_kuesioner.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jurusan/v_kuesioner.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_kuesioner', [], true)
+ 3 APPPATH\Views\v_template_admin.php(181): view('jurusan/v_kuesioner')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(46): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->matching()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-02 17:30:14 --> Invalid file: jurusan/v_kuesioner.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('jurusan/v_kuesioner.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jurusan/v_kuesioner', [], true)
+ 3 APPPATH\Views\v_template_admin.php(181): view('jurusan/v_kuesioner')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Jurusan.php(46): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->matching()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
