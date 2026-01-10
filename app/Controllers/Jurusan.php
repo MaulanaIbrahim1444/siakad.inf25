@@ -25,6 +25,7 @@ class Jurusan extends BaseController
             'menu'     => 'master-data',
             'submenu'  => 'jurusan',
             'page'     => 'jurusan/v_index',
+            'jurusan'  => $this->ModelJurusan->AllData(),
         ];
 
         return view('v_template_admin', $data);
@@ -41,6 +42,7 @@ class Jurusan extends BaseController
             'menu'     => 'tugas',
             'submenu'  => 'matching-jurusan',
             'page'     => 'jurusan/v_kuesioner',
+            
         ];
 
         return view('v_template_admin', $data);
