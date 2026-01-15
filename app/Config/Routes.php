@@ -19,6 +19,7 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
+
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -28,6 +29,9 @@ $routes->post('jurusan/proses', 'Jurusan::proses');
 $routes->post('jurusan/proses-matching', 'Jurusan::prosesMatching');
 $routes->get('feedback', 'Feedback::index');
 $routes->post('feedback/simpan', 'Feedback::simpan');
+$routes->get('ruang', 'Ruang');
+
+
 
 
 

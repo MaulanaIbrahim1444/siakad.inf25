@@ -8,7 +8,7 @@ class DashboardAdmin extends BaseController
     {
         $data = [
             'judul' => 'Dashboard Admin',
-            'subjudul' => '',
+            'subjudul' => 'Dashboard Admin',
             'page' => ('v_dashboard_admin')
         ];
         return view('v_template_admin', $data);

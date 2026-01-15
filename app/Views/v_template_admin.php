@@ -16,7 +16,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/summernote/summernote-bs4.min.css">
+
+  <!-- jQuery -->
+  <script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="<?= base_url('AdminLTE') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="<?= base_url('AdminLTE') ?>/dist/js/adminlte.min.js"></script>
+  <!-- Summernote -->
+  <script src="<?= base_url('AdminLTE') ?>/plugins/summernote/summernote-bs4.min.js"></script>
 </head>
+  
 <body class="hold-transition sidebar-mini">
   <?php
 $menu    = $menu ?? '';
@@ -52,7 +64,8 @@ $submenu = $submenu ?? '';
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" role="button">
-          <i class="fa-thin fa-right-from-bracket"></i> Log Out
+        <i class="fa fa-power-off"></i> Log Out
+
         </a>
       </li>
     </ul>
@@ -98,7 +111,7 @@ $submenu = $submenu ?? '';
                with font-awesome or any other icon font library -->
 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="<?= base_url('DashboardAdmin') ?>" class="nav-link <?= $menu == 'dashboard' ? 'active' : '' ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -119,6 +132,12 @@ $submenu = $submenu ?? '';
                 <a href="<?= base_url('Jurusan') ?>" class="nav-link  <?= $submenu == 'jurusan' ? 'active' : '' ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Jurusan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('Ruang') ?>" class="nav-link  <?= $submenu == 'ruang' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ruang</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -158,7 +177,7 @@ $submenu = $submenu ?? '';
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"><?= $judul ?></h1>
+            <h1 class="m-0"><?= $subjudul ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -191,24 +210,12 @@ $submenu = $submenu ?? '';
 
  
   <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
+  
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="<?= base_url('AdminLTE') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="<?= base_url('AdminLTE') ?>/dist/js/adminlte.min.js"></script>
+
 </body>
 </html>

@@ -49,6 +49,7 @@ class Filters extends BaseConfig
                     'Home','Home/*',
                     'DashboardAdmin','DashboardAdmin/*',
                     'Jurusan','Jurusan/*',
+                    'Ruang','Ruang/*',
                 ]
             ],
         ],

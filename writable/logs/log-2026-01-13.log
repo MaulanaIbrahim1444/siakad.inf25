@@ -1,0 +1,380 @@
+CRITICAL - 2026-01-13 01:13:16 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\Jurusan.php on line 91.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Jurusan')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Jurusan')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('Jurusan')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:20:00 --> Too few arguments to function App\Controllers\Jurusan::UpdateData(), 0 passed in E:\laragon\www\siakad.inf25\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Jurusan.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:21:26 --> Too few arguments to function App\Controllers\Jurusan::UpdateData(), 0 passed in E:\laragon\www\siakad.inf25\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Jurusan.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:23:46 --> Too few arguments to function App\Controllers\Jurusan::UpdateData(), 0 passed in E:\laragon\www\siakad.inf25\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Jurusan.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:24:14 --> Too few arguments to function App\Controllers\Jurusan::UpdateData(), 0 passed in E:\laragon\www\siakad.inf25\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Jurusan.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:25:22 --> Too few arguments to function App\Controllers\Jurusan::UpdateData(), 0 passed in E:\laragon\www\siakad.inf25\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Jurusan.php on line 109.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 02:25:39 --> mysqli_sql_exception: Duplicate entry '1' for key 'tbl_prodi.PRIMARY' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(144): App\Models\ModelJurusan->UpdateData(Array, '1')
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 02:25:39 --> Duplicate entry '1' for key 'tbl_prodi.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET `id_prodi` = :id_prodi:, `kode_prodi` = :kode_prodi:, `nama_prodi` = :nama_prodi:, `Visi_Misi` = :Visi_Misi:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Jurusan.php(144): App\Models\ModelJurusan->UpdateData([...], '1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 02:26:41 --> mysqli_sql_exception: Duplicate entry '1' for key 'tbl_prodi.PRIMARY' in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(144): App\Models\ModelJurusan->UpdateData(Array, '1')
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 02:26:41 --> Duplicate entry '1' for key 'tbl_prodi.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET `id_prodi` = \'1\', `kode_prodi` = \'J01\', `nama_prodi` = \'Teknik Informatika\', `Visi_Misi` = \'<h2 data-start=\\"160\\" data-end=\\"171\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"163\\" data-end=\\"171\\" style=\\"font-weight: bolder;\\">Visi</span></h2><p data-start=\\"172\\" data-end=\\"384\\">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start=\\"386\\" data-end=\\"389\\"><h2 data-start=\\"391\\" data-end=\\"402\\" style=\\"font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);\\"><span data-start=\\"394\\" data-end=\\"402\\" style=\\"font-weight: bolder;\\">Misi</span></h2><p></p><ol data-start=\\"403\\" data-end=\\"997\\"><li data-start=\\"403\\" data-end=\\"548\\"><p data-start=\\"406\\" data-end=\\"548\\">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start=\\"549\\" data-end=\\"665\\"><p data-start=\\"552\\" data-end=\\"665\\">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start=\\"666\\" data-end=\\"752\\"><p data-start=\\"669\\" data-end=\\"752\\">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start=\\"753\\" data-end=\\"863\\"><p data-start=\\"756\\" data-end=\\"863\\">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start=\\"864\\" data-end=\\"997\\"><p data-start=\\"867\\" data-end=\\"997\\">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET `id_prodi` = :id_prodi:, `kode_prodi` = :kode_prodi:, `nama_prodi` = :nama_prodi:, `Visi_Misi` = :Visi_Misi:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Jurusan.php(144): App\Models\ModelJurusan->UpdateData([...], '1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 02:49:57 --> Visi Misi is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Visi Misi')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('Visi_Misi', 'Visi_Misi', '<h2 data-start="160" data-end="171" style="font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);"><span data-start="163" data-end="171" style="font-weight: bolder;">Visi</span></h2><p data-start="172" data-end="384">Menjadi Program Studi Teknik Informatika yang unggul dalam pengembangan dan penerapan teknologi informasi, berdaya saing nasional, serta berkontribusi dalam kemajuan ilmu pengetahuan dan kesejahteraan masyarakat.</p><hr data-start="386" data-end="389"><h2 data-start="391" data-end="402" style="font-family: &quot;Source Sans Pro&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; color: rgb(33, 37, 41);"><span data-start="394" data-end="402" style="font-weight: bolder;">Misi</span></h2><p></p><ol data-start="403" data-end="997"><li data-start="403" data-end="548"><p data-start="406" data-end="548">Menyelenggarakan pendidikan di bidang Teknik Informatika yang berkualitas dan berorientasi pada perkembangan ilmu pengetahuan dan teknologi.</p></li><li data-start="549" data-end="665"><p data-start="552" data-end="665">Menghasilkan lulusan yang kompeten, beretika, kreatif, dan mampu bersaing di dunia kerja maupun dunia industri.</p></li><li data-start="666" data-end="752"><p data-start="669" data-end="752">Mengembangkan penelitian dan inovasi di bidang teknologi informasi dan komputasi.</p></li><li data-start="753" data-end="863"><p data-start="756" data-end="863">Melaksanakan pengabdian kepada masyarakat melalui penerapan ilmu Teknik Informatika secara berkelanjutan.</p></li><li data-start="864" data-end="997"><p data-start="867" data-end="997">Menjalin kerja sama dengan institusi pendidikan, industri, dan masyarakat untuk mendukung peningkatan mutu pendidikan dan lulusan.</p></li></ol>', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Jurusan.php(117): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:36:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2 = :2:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('2')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('2', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('2')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:36:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2 = :2:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 2 = :2:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 2 = :2:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 2 = :2:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 2 = :2:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('2')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('2', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('2')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:41:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:41:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:43:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:43:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:43:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:43:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:44:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:44:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:48:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:48:14 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:49:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:49:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:49:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:49:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:52:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:52:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:53:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:53:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2026-01-13 23:55:17 --> Call to a member function getPost() on null
+in APPPATH\Models\ModelJurusan.php on line 30.
+ 1 APPPATH\Controllers\Jurusan.php(161): App\Models\ModelJurusan->UpdateData('1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2026-01-13 23:56:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1 in E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\siakad.inf25\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_pro...', 0)
+#1 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_pro...')
+#2 E:\laragon\www\siakad.inf25\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_pro...')
+#3 E:\laragon\www\siakad.inf25\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_pro...', Array, false)
+#4 E:\laragon\www\siakad.inf25\app\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+#5 E:\laragon\www\siakad.inf25\app\Controllers\Jurusan.php(160): App\Models\ModelJurusan->UpdateData('1', Array)
+#6 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+#7 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#8 E:\laragon\www\siakad.inf25\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\siakad.inf25\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2026-01-13 23:56:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = :1:' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tbl_prodi` SET 1 = :1:', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_prodi` SET 1 = :1:')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_prodi` SET 1 = :1:')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_prodi` SET 1 = :1:', [...], false)
+ 5 APPPATH\Models\ModelJurusan.php(30): CodeIgniter\Database\BaseBuilder->update('1')
+ 6 APPPATH\Controllers\Jurusan.php(160): App\Models\ModelJurusan->UpdateData('1', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jurusan->UpdateData('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
