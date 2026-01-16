@@ -50,6 +50,8 @@ class Filters extends BaseConfig
                     'DashboardAdmin','DashboardAdmin/*',
                     'Jurusan','Jurusan/*',
                     'Ruang','Ruang/*',
+                    'Matkul','Matkul/*',
+                    'Dosen','Dosen/*',
                 ]
             ],
         ],

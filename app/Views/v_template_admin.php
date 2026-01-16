@@ -141,6 +141,18 @@ $submenu = $submenu ?? '';
                 </a>
               </li>
               <li class="nav-item">
+                <a href="<?= base_url('Matkul') ?>" class="nav-link  <?= $submenu == 'matkul' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mata Kuliah</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('Dosen') ?>" class="nav-link  <?= $submenu == 'dosen' ? 'active' : '' ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dosen</p>
+                </a>
+              </li>
+              <li class="nav-item">
                  <a href="<?= base_url('Jurusan/matching') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <span>Matching Jurusan</span>

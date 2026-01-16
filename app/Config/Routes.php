@@ -30,6 +30,11 @@ $routes->post('jurusan/proses-matching', 'Jurusan::prosesMatching');
 $routes->get('feedback', 'Feedback::index');
 $routes->post('feedback/simpan', 'Feedback::simpan');
 $routes->get('ruang', 'Ruang');
+$routes->post('dosen/updateFoto/(:num)', 'Dosen::updateFoto/$1');
+$routes->get('dosen', 'Dosen::index');
+$routes->post('dosen/insert', 'Dosen::insert');
+
+
 
 
 

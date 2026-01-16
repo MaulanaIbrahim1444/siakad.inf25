@@ -43,21 +43,27 @@
                 <table class="table table-bordered table-sm">
                   <tr class="text-center bg-primary">
                     <th width="50px">NO</th>
-                    <th>Kode Ruangan</th>
-                    <th>Ruang</th>
+                    <th width="100px">Kode Matkul</th>
+                    <th>Mata Kuliah</th>
+                    <th width="100px">SKS</th>
+                    <th width="50px">Semester</th>
+                    <th>Program Studi</th>
                     <th width="120px">Aksi</th>
                   </tr>
                   <?php $no = 1;
-                   foreach ($ruang as $key => $id) { ?>
+                   foreach ($matkul as $key => $id) { ?>
                   <tr>
                     <td class="text-center"><?= $no++; ?></td>
-                    <td class="text-center"><?= $id['kode_ruang'] ?></td>
-                    <td><?= $id['nama_ruang'] ?></td>
+                    <td class="text-center"><?= $id['kode_matkul'] ?></td>
+                    <td><?= $id['nama_matkul'] ?></td>
+                    <td class="text-center"><?= $id['sks'] ?></td>
+                    <td class="text-center"><?= $id['semester'] ?></td>
+                    <td><?= $id['prodi'] ?></td>
                     <td class="text-center">
                    
                         <div class="btn-group">
-                          <button class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $id['id_ruang'] ?>"><i class="fas fa-pencil-alt"></i></button>
-                          <a href="<?= base_url('Ruang/DeleteData/' . $id['id_ruang']) ?>" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
+                          <button class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $id['id_matkul'] ?>"><i class="fas fa-pencil-alt"></i></button>
+                          <a href="<?= base_url('Matkul/DeleteData/' . $id['id_matkul']) ?>" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
                         </div>
                  
                     </td>
@@ -72,7 +78,7 @@
           </div>
           <!-- /.col -->
 
-      <!-- /.modal tambah data -->
+           <!-- /.modal tambah data -->
       <div class="modal fade" id="add">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
@@ -82,17 +88,34 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <?php echo form_open('Ruang/InsertData') ?>
+            <?php echo form_open('Matkul/InsertData') ?>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Kode Ruang</label>
-                    <input type="text" name="kode_ruang" class="form-control" placeholder="Masukkan Kode Ruang" required>
+                    <label>Kode Matkul</label>
+                    <input type="text" name="kode_matkul" maxlength="4" class="form-control" placeholder="Masukkan Kode Matkul" required>
                 </div>
                 <div class="form-group">
-                    <label>Ruang</label>
-                    <input type="text" name="nama_ruang" class="form-control" placeholder="Masukkan Nama Ruang" required>
+                    <label>Mata Kuliah</label>
+                    <input type="text" name="nama_matkul" class="form-control" placeholder="Masukkan Nama Mata Kuliah" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label>SKS</label>
+                    <input type="text" name="sks" maxlength="1"class="form-control" placeholder="Masukkan SKS" required>
+                </div>
+                <div class="form-group">
+                    <label>Semester</label>
+                    <input type="text" name="semester" maxlength="2" class="form-control" placeholder="Masukkan Semester" required>
+                </div>
+                <div class="form-group">
+                    <label>Program Studi</label>
+                    <input type="text" name="prodi" class="form-control" placeholder="Masukkan Program Studi" required>
+                </div>
+                <div class="form-group">
+                    <label>Dosen Pengampu</label>
+                    <input type="text" name="dosen_pengampu" class="form-control" placeholder="Masukkan Dosen Pengampu" required>
+                </div>
+
+
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default btn-flat btn-sn" data-dismiss="modal">Close</button>
               <button type="submit" class="btn btn-primary btn-flat btn-sn">Simpan</button>
@@ -104,8 +127,8 @@
         <!-- /.modal-dialog -->
       </div>
       <!-- /.modal -->
-    <?php foreach ($ruang as $key => $id) { ?>
-        <div class="modal fade" id="edit<?= $id['id_ruang'] ?>">
+    <?php foreach ($matkul as $key => $id) { ?>
+        <div class="modal fade" id="edit<?= $id['id_matkul'] ?>">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -114,15 +137,27 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <?php echo form_open('Ruang/UpdateData/' . $id['id_ruang']) ?>
+            <?php echo form_open('Matkul/UpdateData/' . $id['id_matkul']) ?>
             <div class="modal-body">
                 <div class="form-group">
-                    <label>Kode Ruang</label>
-                    <input type="text" name="kode_ruang" value="<?= $id['kode_ruang'] ?>" class="form-control" placeholder="Masukkan Kode Ruang" required>
+                    <label>Kode Matkul</label>
+                    <input type="text" name="kode_matkul" maxlength="4" value="<?= $id['kode_matkul'] ?>" class="form-control" placeholder="Masukkan Kode Matkul" required>
                 </div>
                 <div class="form-group">
-                    <label>Ruang</label>
-                    <input type="text" name="nama_ruang" value="<?= $id['nama_ruang'] ?>" class="form-control" placeholder="Masukkan Nama Ruang" required>
+                    <label>Mata Kuliah</label>
+                    <input type="text" name="nama_matkul" value="<?= $id['nama_matkul'] ?>" class="form-control" placeholder="Masukkan Nama Mata Kuliah" required>
+                </div>
+                <div class="form-group">
+                    <label>SKS</label>
+                    <input type="text" name="sks" maxlength="1" value="<?= $id['sks'] ?>" class="form-control" placeholder="Masukkan jumlah SKS" required>
+                </div>
+                <div class="form-group">
+                    <label>Semester</label>
+                    <input type="text" name="semester" maxlength="2" value="<?= $id['semester'] ?>" class="form-control" placeholder="Masukkan Semester" required>
+                </div>
+                <div class="form-group">
+                    <label>Program Studi</label>
+                    <input type="text" name="prodi" value="<?= $id['prodi'] ?>" class="form-control" placeholder="Masukkan Program Studi" required>
                 </div>
             </div>
             <div class="modal-footer justify-content-between">
@@ -136,3 +171,5 @@
         <!-- /.modal-dialog -->
       </div>
     <?php } ?>
+
+    
